@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สำรวจตามโซน | Nakhon Si City</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <header>
+    </header>
+
+    <main>
+        <h1 class="animate-in" style="animation-delay: 0.1s; text-align: center;">🗺️ สำรวจตามโซน</h1>
+        <section class="explore-map animate-in" style="animation-delay: 0.2s;">
+            <div class="map-container">
+                <div class="map-svg-wrapper">
+                    <svg class="map-svg" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Stylized Nakhon Si Map -->
+                        <path class="map-district" d="M150,50 L250,50 L300,150 L250,250 L150,250 L100,150 Z"
+                            data-zone="Mountain" />
+                        <path class="map-district" d="M250,50 L350,100 L380,200 L350,300 L250,250 Z"
+                            data-zone="Coastal" />
+                        <path class="map-district" d="M150,250 L250,250 L280,350 L200,450 L120,350 Z"
+                            data-zone="City" />
+                        <circle cx="200" cy="150" r="10" fill="var(--secondary)" />
+                        <circle cx="320" cy="180" r="8" fill="var(--secondary)" />
+                        <circle cx="210" cy="320" r="8" fill="var(--secondary)" />
+                    </svg>
+                </div>
+                <div class="map-info">
+                    <h3>สำรวจนครศรีธรรมราช 🧭</h3>
+                    <p id="zone-text" style="color: var(--text-muted);">
+                        ลองนำเมาส์ไปชี้ที่แผนที่เพื่อดูไฮไลท์ของแต่ละพื้นที่</p>
+                    <div id="zone-highlights" style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 3rem; text-align: center;">
+                <p style="color: var(--text-muted); font-size: 0.9rem;">
+                    * แผนที่นี้เป็นเพียงภาพจำลองเพื่อประกอบการแนะนำโซนท่องเที่ยวเท่านั้น
+                </p>
+                <a href="index.html" class="btn" style="margin-top: 2rem;">เริ่มออกเดินทาง 🚀</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
